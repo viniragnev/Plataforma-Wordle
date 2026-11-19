@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Wordle Senatec</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--header-->
+    <header class="senac-header">
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-badge">SENATEC</div>
+                <div>
+                    <h1>Redes &amp; <span>Tecnologia</span></h1>
+                    <p class="subtitle">Portal Interativo • Vinicius Ragnev • Técnico em Informática SENAC</p>
+                </div>
+            </div>
+
+            <!--nav bar-->
+            <nav class="main-nav" aria-label="Navegação principal">
+                <button class="nav-btn active" data-target="view-aprender" type="button"
+                    onclick="mudarAba('view-aprender')">
+                    📚 Aprender
+                </button>
+                <button class="nav-btn" data-target="view-jogo" type="button" onclick="mudarAba('view-jogo')">
+                    🎮 Jogar
+                </button>
+                <button class="nav-btn" data-target="view-glossario" type="button" onclick="mudarAba('view-glossario')">
+                    📖 Glossário
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <main class="main-wrapper">
+        <!--pagina principal-->
+        <section id="view-aprender" class="view-section active">
+            <div class="hero-banner">
+                <div class="hero-text">
+                    <span class="pill-orange">Explore a Infraestrutura Digital</span>
+                    <h2>Entenda como o mundo se conecta e teste seus conhecimentos</h2>
+                    <p>
+                        De cabos de fibra óptica e roteadores até sensores inteligentes de IoT.<br>
+                        Navegue pelos conceitos de redes, assista aos vídeos e desafie-se no nosso Wordle.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-senac-orange" type="button" onclick="mudarAba('view-jogo')">
+                            🎮 Ir para o Desafio Wordle
+                        </button>
+                        <button class="btn-senac-outline-white" type="button" onclick="mudarAba('view-glossario')">
+                            📖 Abrir Glossário
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cards didaticos-->
+            <div class="section-heading">
+                <h3>Expanda seus Conhecimentos</h3>
+                <p>Conceitos fundamentais de redes</p>
+            </div>
+
+            <div class="topics-grid">
+                <article class="topic-card">
+                    <div class="topic-tag">01 • Fundamentos</div>
+                    <h4>Afinal de contas<br>O que é a internet?</h4>
+                    <p>
+                        A Internet é a maior rede de computadores do planeta, funcionando como uma imensa
+                        <strong>WAN</strong> (rede de longa distância) que interliga bilhões de dispositivos e
+                        redes locais (<strong>LANs</strong>) ao redor do mundo.
+                    </p>
+                    <ul class="topic-list">
+                        <li><strong>Infraestrutura física:</strong> Cabos submarinos de fibra óptica, satélites, antenas
+                            e roteadores globais.</li>
+                        <li><strong>Protocolos (TCP/IP):</strong> Dividem os dados em pacotes e garantem a entrega no
+                            destino certo em milissegundos.</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-tag">02 • Conectividade Global</div>
+                    <h4>Como a Internet Funciona</h4>
+                    <p>
+                        Ao acessar um site, seu navegador precisa localizar onde ele está hospedado, solicitar os
+                        arquivos e recebê-los com segurança — tudo isso acontece em frações de segundo pela rede
+                        mundial (internet).
+                    </p>
+                    <ul class="topic-list">
+                        <li><strong>DNS:</strong> Traduz o nome do site (domínio) no endereço <strong>IP</strong> real
+                            do servidor.</li>
+                        <li><strong>Cliente-Servidor:</strong> Seu navegador (cliente) faz o pedido; o servidor processa
+                            e envia a resposta.</li>
+                        <li><strong>HTTPS e TLS:</strong> Criptografam a conexão para que os dados viajem protegidos
+                            contra interceptações.</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-tag">03 • Acesso Residencial</div>
+                    <h4>Mas como a internet<br>chega na sua casa?</h4>
+                    <p>
+                        O trajeto entre a rede mundial e os seus aparelhos passa por um <strong>provedor (ISP)</strong>,
+                        que traz o sinal dos cabos principais até o poste da sua rua e o entrega dentro da sua
+                        residência.
+                    </p>
+                    <ul class="topic-list">
+                        <li><strong>Fibra Óptica (ISP):</strong> Conduz os dados da rua até a casa por pulsos de luz em
+                            alta velocidade.</li>
+                        <li><strong>Modem:</strong> Converte o sinal óptico da operadora em dados
+                            digitais.</li>
+                        <li><strong>Roteador e Wi-Fi:</strong> Criam a sua rede local (<strong>LAN</strong>),
+                            distribuindo o acesso por cabo ou sem fio.</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-tag">04 • Camada Física</div>
+                    <h4>Como a internet é transmitida por cabos?</h4>
+                    <p>
+                        Na prática, a internet viaja como ondas elétricas em movimento geradas pelas centrais dos
+                        <strong>provedores</strong>. Ao chegar no roteador em <strong>bits (0 e 1)</strong>, essa
+                        informação passa pelo processo de <strong>modulação</strong>, transformando-se nas ondas
+                        eletromagnéticas que formam o Wi-Fi da sua rede residencial (<strong>LAN</strong>).
+                    </p>
+                    <ul class="topic-list">
+                        <li><strong>Saída da Central:</strong> Transmissores da operadora convertem dados puros em
+                            sinais modulados de alta frequência na origem.</li>
+                        <li><strong>Pulsos Elétricos:</strong> Dentro dos circuitos e cabos de cobre (Ethernet), os bits
+                            viajam como variações de corrente elétrica.</li>
+                        <li><strong>Access Point (Rádio):</strong> Transforma os bits elétricos em ondas
+                            eletromagnéticas (2,4 GHz e 5 GHz) irradiadas pelas antenas.</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-tag">05 • Infraestrutura &amp; Segurança</div>
+                    <h4>Cabeamento Estruturado<br>&amp; Proteção de Rede</h4>
+                    <p>
+                        De nada adianta ter internet rápida se a rede estiver desorganizada ou vulnerável. O
+                        <strong>cabeamento estruturado</strong> padroniza toda a parte física para evitar falhas e
+                        interferências, enquanto as barreiras de <strong>segurança</strong> protegem os dados contra
+                        invasões e vazamentos.
+                    </p>
+                    <ul class="topic-list">
+                        <li><strong>Racks e Patch Panels:</strong> Centralizam e identificam os cabos, evitando
+                            emaranhados e facilitando manutenções.</li>
+                        <li><strong>Padrão T568A / T568B:</strong> Define a ordem exata dos fios na crimpagem do
+                            conector <strong>RJ-45</strong> para evitar perda de sinal.</li>
+                        <li><strong>Firewall e LGPD:</strong> Bloqueiam acessos não autorizados e garantem a privacidade
+                            dos dados trafegados na rede.</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-tag">06 • Internet das Coisas</div>
+                    <h4>O que é IoT?<br>(Internet das Coisas)</h4>
+                    <p>
+                        A <strong>IoT</strong> é o conceito de conectar objetos físicos do
+                        dia a dia à internet.<br>Equipados com chips e <strong>sensores</strong>, aparelhos comuns
+                        passam a coletar, enviar e receber dados em tempo real, automatizando tarefas de forma
+                        inteligente.
+                    </p>
+                    <ul class="topic-list">
+                        <li><strong>Sensores e Atuadores:</strong> Captam dados do ambiente (temperatura, presença, luz)
+                            e executam ações automáticas.</li>
+                        <li><strong>Comunicação sem Fio:</strong> Usam tecnologias como <strong>Wi-Fi</strong>,
+                            <strong>Bluetooth</strong>, <strong>Zigbee</strong> ou <strong>5G</strong> para conversar
+                            com aplicativos e servidores.
+                        </li>
+                        <li><strong>Na Prática:</strong> Lâmpadas inteligentes, smartwatches, fechaduras digitais,
+                            carros conectados e monitoramento agrícola ou industrial.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!--Videos Curtos-->
+            <div class="section-heading">
+                <h3>🎬 Vídeos Explicativos Curtos</h3>
+                <p>Aprenda um pouco mais com estes vídeos</p>
+            </div>
+
+            <div class="videos-grid">
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <video controls playsinline preload="metadata">
+                            <source src="./videos/internet.mp4" type="video/mp4" />
+                        </video>
+                        <div class="video-placeholder">
+                            <span>🎬 Vídeo 01: Como a internet funciona</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>O Caminho dos Pacotes na Rede</h4>
+                        <p>Do padrão de cabos T568A ao servidor: entenda a comunicação, o firewall e a criptografia.</p>
+                    </div>
+                </article>
+
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <video controls playsinline preload="metadata">
+                            <source src="./videos/iot.mp4" type="video/mp4" />
+                        </video>
+                        <div class="video-placeholder">
+                            <span>🤖 Vídeo 02: Internet das Coisas (IoT)</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Objetos Conectados (IoT)</h4>
+                        <p>Entenda como objetos físicos usam sensores e microcontroladores para se conectar à internet e
+                            automatizar tarefas.</p>
+                    </div>
+                </article>
+
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <video controls playsinline preload="metadata">
+                            <source src="./videos/ip.mp4" type="video/mp4" />
+                        </video>
+                        <div class="video-placeholder">
+                            <span>🧭 Vídeo 03: DNS e Endereço IP</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>DNS e Endereços IP</h4>
+                        <p>Descubra como a internet traduz nomes de sites em endereços únicos para entregar cada pedido
+                            no destino certo.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--jogo wordle-->
+        <section id="view-jogo" class="view-section">
+            <div class="game-toolbar">
+                <div class="game-instructions">
+                    Descubra o termo de <strong>Redes &amp; Tecnologia</strong>. Você pode testar qualquer
+                    palavra!
+                </div>
+                <div class="game-buttons">
+                    <button id="btn-dica" class="btn-tool" type="button" title="Mostrar categoria da palavra">
+                        💡 Dica
+                    </button>
+                    <button id="btn-teclado" class="btn-tool" type="button" aria-expanded="false"
+                        title="Ativar ou ocultar teclado na tela">
+                        ⌨️ Teclado
+                    </button>
+                    <button id="btn-reiniciar" class="btn-tool" type="button" title="Sortear nova palavra">
+                        🔄 Novo
+                    </button>
+                </div>
+            </div>
+
+            <div class="api-loading-slot">
+                <div id="api-loading" class="api-loading hidden" role="status" aria-live="polite">
+                    <span class="spinner"></span>
+                    <span>Verificando palavra...</span>
+                </div>
+            </div>
+
+            <div class="color-legend">
+                <span><i class="dot correct"></i> Posição certa</span>
+                <span><i class="dot present"></i> Outra posição</span>
+                <span><i class="dot absent"></i> Não tem</span>
+            </div>
+
+            <div id="board" class="board" aria-label="Tabuleiro do jogo"></div>
+
+            <div id="virtual-keyboard" class="keyboard hidden" aria-label="Teclado virtual"></div>
+
+            <article id="edu-card" class="edu-card hidden" aria-live="polite">
+                <div class="edu-badge" id="edu-status"></div>
+                <h2 id="edu-word-title"></h2>
+                <span class="edu-category" id="edu-category"></span>
+
+                <div class="edu-media">
+                    <img id="edu-image" src="" alt="Ilustração do termo técnico" />
+                </div>
+
+                <p id="edu-explanation" class="edu-explanation"></p>
+
+                <div class="edu-actions">
+                    <button id="btn-share" class="btn-senac-blue" type="button">
+                        Tirar Foto de Recordação
+                    </button>
+                    <button id="btn-play-again" class="btn-senac-orange" type="button">
+                        Jogar Novamente
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <!--glossario-->
+        <section id="view-glossario" class="view-section">
+            <div class="section-heading">
+                <h3>📖 Glossário de Redes &amp; Tecnologia</h3>
+                <p>Consulte todos os termos presentes no Wordle Senatec com suas definições</p>
+            </div>
+
+            <div id="glossary-grid" class="glossary-grid"></div>
+        </section>
+    </main>
+
+    <footer class="senac-footer">
+        <div class="footer-inner">
+            <span><strong>SENAC</strong> • Projeto Senatec — Redes &amp; Tecnologia</span>
+            <span id="net-status" title="Clique para testar o envio">● HTTP • LAN</span>
+        </div>
+    </footer>
+
+    <script>
+        const statusEl = document.getElementById('net-status');
+
+        function atualizarRede() {
+            if (!navigator.onLine) {
+                statusEl.textContent = '○ Offline';
+                return;
+            }
+
+            const nav = performance.getEntriesByType('navigation')[0];
+            let proto = (nav?.nextHopProtocol || location.protocol.replace(':', '')).toUpperCase();
+            if (proto === 'H2') proto = 'HTTP/2';
+
+            const host = location.hostname;
+            const isLan = !host || host === 'localhost' || host === '127.0.0.1' ||
+                host.startsWith('192.168.') || host.startsWith('10.');
+            const rede = location.protocol === 'file:' ? 'LOCAL' : (isLan ? 'LAN' : 'WAN');
+
+            statusEl.textContent = `● ${proto} • ${rede}`;
+        }
+
+        window.addEventListener('load', atualizarRede);
+        window.addEventListener('online', atualizarRede);
+        window.addEventListener('offline', atualizarRede);
+
+        statusEl.style.cursor = 'pointer';
+        statusEl.addEventListener('click', async () => {
+            if (location.protocol === 'file:') return;
+            const t0 = performance.now();
+            try {
+                const res = await fetch(location.href, { method: 'HEAD', cache: 'no-store' });
+                const ms = Math.max(1, Math.round(performance.now() - t0));
+                statusEl.textContent = `⚡ ${res.status} OK (${ms}ms)`;
+                setTimeout(atualizarRede, 2500);
+            } catch {
+                statusEl.textContent = '○ Erro de rede';
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/canvas-confetti@1.9.3/dist/confetti.browser.min.js" async></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
