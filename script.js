@@ -7,420 +7,420 @@ const PALAVRAS_REDES = [
     titulo: "Fibra Óptica",
     categoria: "Infraestrutura Física",
     imagem: "./img/fibra.png",
-    explicacao: "Meio de transmissão que utiliza pulsos de luz dentro de filamentos de vidro ou plástico para enviar dados em altíssima velocidade e longas distâncias sem interferência eletromagnética."
+    explicacao: "Cabo feito com filamentos de vidro ou plástico muito finos que transportam a internet usando pulsos de luz, garantindo altíssima velocidade e imunidade a interferências elétricas."
   },
   {
     palavra: "SMART",
     titulo: "Dispositivos Smart & IoT",
     categoria: "Internet das Coisas (IoT)",
     imagem: "./img/smart.png",
-    explicacao: "Objetos físicos equipados com sensores, microcontroladores e conectividade de rede (Wi-Fi, Bluetooth ou NFC) capazes de coletar dados e automatizar tarefas na nuvem."
+    explicacao: "Objetos do dia a dia (como lâmpadas, TVs e câmeras) equipados com sensores e conexão Wi-Fi ou Bluetooth para enviar dados e receber comandos pelo celular ou pela nuvem."
   },
   {
     palavra: "PROXY",
     titulo: "Servidor Proxy",
     categoria: "Segurança & Arquitetura",
     imagem: "./img/proxy.png",
-    explicacao: "Servidor intermediário entre o dispositivo do usuário e a internet. É usado para filtrar conteúdo, aumentar a privacidade, controlar acessos e acelerar requisições via cache."
+    explicacao: "Servidor que fica no meio do caminho entre o seu dispositivo e a internet. Ele ajuda a filtrar sites, aumentar a privacidade, controlar acessos e acelerar páginas usando memória cache."
   },
   {
     palavra: "NUVEM",
     titulo: "Computação em Nuvem (Cloud)",
     categoria: "Serviços & Infraestrutura",
     imagem: "./img/nuvem.png",
-    explicacao: "Entrega de recursos de TI sob demanda pela internet — como servidores, armazenamento e bancos de dados — eliminando a necessidade de manter servidores físicos locais."
+    explicacao: "Uso de servidores, armazenamento e sistemas pela internet sob demanda, permitindo acessar arquivos e aplicativos de qualquer lugar sem depender apenas do disco do seu computador."
+  },
+  {
+    palavra: "CLOUD",
+    titulo: "Cloud Computing (Nuvem)",
+    categoria: "Serviços & Infraestrutura",
+    imagem: "./img/cloud.png",
+    explicacao: "Termo em inglês para computação em nuvem: grandes centros de dados espalhados pelo mundo que guardam suas fotos, vídeos e sistemas para você acessar de qualquer aparelho conectado."
   },
   {
     palavra: "CABOS",
     titulo: "Cabeamento Estruturado",
     categoria: "Infraestrutura Física",
     imagem: "./img/cabos.png",
-    explicacao: "Conjunto padronizado de cabos par trançado (Cat5e/Cat6) e conectores RJ-45 crimpados no padrão T568A/B para interligar computadores, switches e roteadores."
+    explicacao: "Conjunto organizado de cabos de rede (como par trançado Cat5e/Cat6 e fibra óptica) com conectores padronizados para ligar computadores, switches e roteadores com estabilidade."
   },
   {
     palavra: "PORTA",
     titulo: "Porta Lógica (TCP/UDP)",
     categoria: "Protocolos de Rede",
     imagem: "./img/porta.png",
-    explicacao: "Identificador numérico (0 a 65535) que direciona o tráfego de rede para o serviço correto dentro de um servidor, como a porta 80 (HTTP), 443 (HTTPS) e 22 (SSH)."
+    explicacao: "Número de identificação (de 0 a 65535) que direciona os dados para o serviço certo dentro de um servidor, como a porta 80 para sites comuns (HTTP) e a 443 para sites seguros (HTTPS)."
   },
   {
     palavra: "LINUX",
     titulo: "Sistema Operacional Linux",
     categoria: "Sistemas & Servidores",
     imagem: "./img/linux.png",
-    explicacao: "Sistema operacional de código aberto que alimenta a maior parte dos servidores da internet, roteadores, firewalls e infraestruturas em nuvem por sua estabilidade."
+    explicacao: "Sistema operacional gratuito e de código aberto que move a maior parte dos servidores da internet, roteadores Wi-Fi e infraestruturas em nuvem pela sua segurança e estabilidade."
   },
   {
     palavra: "TOKEN",
     titulo: "Token de Autenticação",
     categoria: "Cibersegurança",
     imagem: "./img/token.png",
-    explicacao: "Credencial digital temporária ou dispositivo físico usado para validar a identidade de um usuário ou aplicação em APIs e autenticação em dois fatores (2FA)."
+    explicacao: "Código temporário ou chave digital usada para confirmar sua identidade em aplicativos, bancos e na verificação em duas etapas (2FA), impedindo invasões mesmo se descobrirem sua senha."
   },
   {
     palavra: "SENHA",
     titulo: "Senha e Hash Criptográfico",
     categoria: "Cibersegurança",
     imagem: "./img/senha.png",
-    explicacao: "Chave secreta de acesso que, em sistemas seguros, nunca é salva em texto puro, mas convertida em um código matemático irreversível (hash) no banco de dados."
+    explicacao: "Chave secreta que protege suas contas. Em sistemas bem construídos, a senha nunca é guardada como texto comum, mas transformada em um código matemático embaralhado (hash)."
   },
   {
     palavra: "MODEM",
-    titulo: "Modem (Modulador-Demodulador)",
+    titulo: "Modem & ONT",
     categoria: "Hardware de Rede",
     imagem: "./img/modem.png",
-    explicacao: "Equipamento responsável por converter o sinal vindo da operadora (fibra óptica ou cabo coaxial) em dados digitais compreendidos pelo roteador e pelos dispositivos."
+    explicacao: "Aparelho que recebe o sinal da operadora (seja luz pela fibra óptica ou sinal pelo cabo) e o transforma em dados digitais que o roteador e os dispositivos conseguem entender."
   },
   {
     palavra: "DADOS",
     titulo: "Pacotes de Dados",
     categoria: "Protocolos de Rede",
     imagem: "./img/dados.png",
-    explicacao: "Na internet, arquivos e mensagens são divididos em pequenos blocos chamados pacotes, que viajam por diferentes rotas e são remontados no destino."
+    explicacao: "Na internet, fotos, vídeos e mensagens são divididos em milhares de pequenos blocos chamados pacotes, que viajam pela rede e são remontados na ordem certa no aparelho de destino."
   },
   {
     palavra: "REDES",
     titulo: "Redes de Computadores",
     categoria: "Conceito Fundamental",
     imagem: "./img/redes.png",
-    explicacao: "Conjunto de dois ou mais dispositivos interconectados por meios físicos ou sem fio (Wi-Fi) para compartilhar arquivos, internet, impressoras e serviços."
+    explicacao: "Dois ou mais dispositivos conectados por cabos ou sem fio (Wi-Fi) para trocar informações, compartilhar acesso à internet, impressoras e arquivos."
   },
   {
     palavra: "LOGIN",
     titulo: "Autenticação de Acesso (Login)",
     categoria: "Cibersegurança",
     imagem: "./img/login.png",
-    explicacao: "Processo em que o sistema valida as credenciais do usuário antes de liberar permissões e recursos dentro de uma rede corporativa ou aplicação web."
+    explicacao: "Etapa em que o sistema confere seu usuário e senha antes de liberar o acesso a uma rede Wi-Fi corporativa, sistema ou plataforma online."
   },
   {
-    palavra: "HOSTS",
-    titulo: "Hosts na Rede",
-    categoria: "Protocolos de Rede",
-    imagem: "./img/hosts.png",
-    explicacao: "Qualquer dispositivo conectado a uma rede IP (computador, celular, servidor ou sensor IoT) capaz de enviar e receber dados usando um endereço lógico."
+    palavra: "PONTO",
+    titulo: "Ponto de Acesso (Access Point)",
+    categoria: "Redes Sem Fio",
+    imagem: "./img/ponto.png",
+    explicacao: "Equipamento ligado à rede cabeada que cria e espalha o sinal Wi-Fi no ambiente, permitindo que celulares e notebooks se conectem sem precisar de fios."
   },
   {
-    palavra: "PATCH",
-    titulo: "Patch Panel & Atualizações",
-    categoria: "Infraestrutura Física",
-    imagem: "./img/patch.png",
-    explicacao: "Em redes físicas, é o painel que organiza e interliga os cabos dentro do rack. Em software, é uma correção lançada para fechar falhas de segurança."
+    palavra: "ATIVO",
+    titulo: "Equipamentos Ativos de Rede",
+    categoria: "Hardware de Rede",
+    imagem: "./img/ativo.png",
+    explicacao: "Aparelhos que precisam de energia elétrica para processar e direcionar o tráfego da rede, como roteadores, switches, modems e pontos de acesso Wi-Fi."
   },
   {
     palavra: "BANDA",
     titulo: "Largura de Banda (Bandwidth)",
     categoria: "Conceito Fundamental",
     imagem: "./img/banda.png",
-    explicacao: "Capacidade máxima de transferência de dados de uma conexão em um determinado tempo, geralmente medida em Megabits por segundo (Mbps) ou Gigabits (Gbps)."
+    explicacao: "Quantidade máxima de dados que sua conexão consegue transmitir por segundo, medida em Megabits (Mbps) ou Gigabits (Gbps). Quanto maior a banda, mais downloads e vídeos rodam juntos sem travar."
   },
   {
-    palavra: "TRAMA",
-    titulo: "Trama / Quadro Ethernet",
-    categoria: "Protocolos de Rede",
-    imagem: "./img/trama.png",
-    explicacao: "Unidade de dados da Camada de Enlace (OSI 2) que carrega os endereços físicos MAC de origem e destino para entrega dentro da mesma rede local."
+    palavra: "BANCO",
+    titulo: "Banco de Dados (Database)",
+    categoria: "Serviços & Infraestrutura",
+    imagem: "./img/banco.png",
+    explicacao: "Sistema organizado em servidores que guarda e consulta informações de sites e aplicativos — como cadastros de usuários, mensagens e históricos — em frações de segundo."
   },
   {
     palavra: "CHAVE",
     titulo: "Chave Criptográfica",
     categoria: "Cibersegurança",
     imagem: "./img/chave.png",
-    explicacao: "Sequência matemática utilizada por algoritmos de criptografia (como TLS/HTTPS) para embaralhar e proteger os dados trafegados contra interceptação."
+    explicacao: "Código matemático usado pela criptografia (como no cadeado do HTTPS) para embaralhar e decifrar informações na rede, impedindo que terceiros leiam seus dados."
   },
   {
     palavra: "HTTPS",
     titulo: "Protocolo HTTPS (Web Segura)",
     categoria: "Protocolos de Rede",
     imagem: "./img/https.png",
-    explicacao: "Versão segura do protocolo HTTP que utiliza criptografia TLS para proteger a troca de informações entre o navegador e o servidor, evitando que terceiros leiam os dados."
+    explicacao: "Versão protegida do protocolo da web (indicada pelo cadeado no navegador) que usa criptografia TLS para blindar senhas, mensagens e pagamentos enviados entre você e o site."
   },
   {
     palavra: "ROTAS",
-    titulo: "Roteamento e Tabela de Rotas",
+    titulo: "Roteamento e Caminhos na Rede",
     categoria: "Protocolos de Rede",
     imagem: "./img/rotas.png",
-    explicacao: "Caminhos lógicos definidos nos roteadores para encaminhar pacotes de dados de uma rede de origem até o destino final através da internet."
+    explicacao: "Caminhos escolhidos pelos roteadores para guiar os pacotes de dados do seu dispositivo até o servidor de destino, desviando de congestionamentos na internet."
   },
   {
     palavra: "SINAL",
     titulo: "Sinal de Rede e Atenuação",
     categoria: "Conceito Fundamental",
     imagem: "./img/sinal.png",
-    explicacao: "Onda eletromagnética ou pulso elétrico/óptico que transporta os bits pela rede. Obstáculos físicos e longas distâncias causam atenuação (perda de intensidade)."
+    explicacao: "Onda de rádio, pulso elétrico ou luz que carrega os dados. Paredes, distância e cabos muito longos causam atenuação, que é o enfraquecimento gradual desse sinal."
   },
   {
-    palavra: "RACKS",
-    titulo: "Rack de Telecomunicações",
-    categoria: "Infraestrutura Física",
-    imagem: "./img/racks.png",
-    explicacao: "Estrutura metálica padronizada (geralmente 19 polegadas) usada para alojar, organizar e proteger servidores, switches, roteadores e patch panels."
-  },
-  {
-    palavra: "VLANS",
-    titulo: "VLAN (Rede Local Virtual)",
-    categoria: "Segurança & Arquitetura",
-    imagem: "./img/vlans.png",
-    explicacao: "Tecnologia que divide uma mesma rede física em várias redes lógicas isoladas dentro do switch, aumentando a segurança e reduzindo o tráfego desnecessário."
+    palavra: "DISCO",
+    titulo: "Armazenamento em Disco & NAS",
+    categoria: "Hardware de Rede",
+    imagem: "./img/disco.png",
+    explicacao: "Unidades de armazenamento (HD ou SSD) instaladas em servidores ou equipamentos de rede (NAS) para guardar arquivos compartilhados e backups de vários computadores."
   },
   {
     palavra: "PLACA",
     titulo: "Placa de Rede (NIC)",
     categoria: "Hardware de Rede",
     imagem: "./img/placa.png",
-    explicacao: "Componente de hardware que permite ao computador ou servidor se conectar a uma rede via cabo (Ethernet) ou sem fio (Wi-Fi), possuindo um endereço MAC único de fábrica."
+    explicacao: "Componente interno do computador ou celular responsável por conectar o aparelho ao cabo Ethernet ou ao Wi-Fi, possuindo um código físico único chamado endereço MAC."
   },
   {
     palavra: "CANAL",
     titulo: "Canais de Frequência Wi-Fi",
     categoria: "Redes Sem Fio",
     imagem: "./img/canal.png",
-    explicacao: "Subdivisões dentro das faixas de 2,4 GHz e 5 GHz usadas pelos roteadores Wi-Fi para evitar interferência entre redes sem fio vizinhas."
+    explicacao: "Faixas divididas dentro do Wi-Fi (2,4 GHz e 5 GHz) que funcionam como pistas de uma rodovia, evitando que o sinal do seu roteador sofra interferência do Wi-Fi dos vizinhos."
   },
   {
-    palavra: "PARES",
-    titulo: "Cabo de Par Trançado (UTP)",
-    categoria: "Infraestrutura Física",
-    imagem: "./img/pares.png",
-    explicacao: "Fios de cobre entrelaçados dois a dois dentro do cabo de rede para cancelar interferências eletromagnéticas externas e manter a estabilidade da transmissão."
+    palavra: "CHIPS",
+    titulo: "Microcontroladores & Chips IoT",
+    categoria: "Internet das Coisas (IoT)",
+    imagem: "./img/chips.png",
+    explicacao: "Pequenos circuitos integrados (como ESP32 e Arduino) que funcionam como o cérebro de dispositivos inteligentes, processando sensores e conectando projetos à rede."
   },
   {
-    palavra: "FAIXA",
-    titulo: "Faixa de Endereços IP (Sub-rede)",
+    palavra: "BLOCO",
+    titulo: "Bloco de Endereços IP",
     categoria: "Protocolos de Rede",
-    imagem: "./img/faixa.png",
-    explicacao: "Intervalo definido de endereços IP (como 192.168.0.1 a 192.168.0.254) delimitado por uma máscara de sub-rede para organizar os dispositivos de uma rede."
+    imagem: "./img/bloco.png",
+    explicacao: "Grupo organizado de endereços IP (como 192.168.0.1 até 192.168.0.254) distribuído pelo roteador para identificar cada celular, computador ou TV ligada na mesma rede."
   },
   {
     palavra: "MALHA",
-    titulo: "Topologia em Malha (Rede Mesh)",
+    titulo: "Rede Wi-Fi Mesh (Em Malha)",
     categoria: "Redes Sem Fio",
     imagem: "./img/malha.png",
-    explicacao: "Arquitetura em que vários pontos de acesso se comunicam entre si formando uma rede única e redundante, eliminando pontos cegos de sinal Wi-Fi."
+    explicacao: "Sistema com dois ou mais módulos Wi-Fi que conversam entre si e espalham um único sinal forte pela casa ou empresa inteira, eliminando áreas sem cobertura."
   },
   {
     palavra: "ONDAS",
     titulo: "Ondas Eletromagnéticas (RF)",
     categoria: "Redes Sem Fio",
     imagem: "./img/ondas.png",
-    explicacao: "Meio invisível pelo qual os dados modulados viajam pelo ar entre as antenas do roteador e os dispositivos conectados via Wi-Fi, Bluetooth ou 5G."
+    explicacao: "Forma de energia invisível que transporta os dados pelo ar entre as antenas do roteador e os aparelhos conectados via Wi-Fi, Bluetooth ou redes móveis 4G/5G."
   },
   {
-    palavra: "NODOS",
-    titulo: "Nós de Rede (Nodes)",
+    palavra: "MAPAS",
+    titulo: "Topologia e Mapa da Rede",
     categoria: "Conceito Fundamental",
-    imagem: "./img/nodos.png",
-    explicacao: "Qualquer ponto ativo de conexão, redistribuição ou término dentro de uma topologia de rede, como switches, roteadores, servidores e estações de trabalho."
+    imagem: "./img/mapas.png",
+    explicacao: "Desenho lógico ou físico que mostra como computadores, switches, roteadores e cabos estão interligados, facilitando a manutenção e a expansão da infraestrutura."
   },
   {
-    palavra: "LINKS",
-    titulo: "Enlaces e Links de Dados",
+    palavra: "FONTE",
+    titulo: "Fonte de Alimentação & PoE",
     categoria: "Infraestrutura Física",
-    imagem: "./img/links.png",
-    explicacao: "Conexão física ou lógica estabelecida entre dois pontos da rede para permitir o tráfego contínuo de informações, como um link dedicado de internet."
+    imagem: "./img/fonte.png",
+    explicacao: "Componente que fornece energia elétrica estável aos equipamentos de rede. Com a tecnologia PoE, até o próprio cabo de rede consegue levar energia para câmeras e antenas Wi-Fi."
   },
   {
     palavra: "CACHE",
-    titulo: "Cache de DNS e Rede",
+    titulo: "Cache de DNS e Navegação",
     categoria: "Serviços & Infraestrutura",
     imagem: "./img/cache.png",
-    explicacao: "Memória temporária que guarda respostas recentes (como traduções de nomes de sites em IPs) para acelerar os próximos acessos e economizar banda."
+    explicacao: "Memória rápida que guarda endereços e arquivos acessados recentemente para que sites e vídeos abram quase instantaneamente na próxima visita, economizando internet."
   },
   {
     palavra: "LOCAL",
     titulo: "Rede Local (LAN) & Localhost",
     categoria: "Conceito Fundamental",
     imagem: "./img/local.png",
-    explicacao: "Refere-se tanto à rede privada de um ambiente (casa, escola ou empresa) quanto ao endereço de loopback (127.0.0.1) que aponta para a própria máquina."
+    explicacao: "Rede interna de um espaço específico (casa, escola ou escritório) onde os dispositivos se comunicam diretamente entre si, além de representar o endereço interno do próprio computador (127.0.0.1)."
   },
   {
     palavra: "CISCO",
     titulo: "Equipamentos e Redes Cisco",
     categoria: "Hardware de Rede",
     imagem: "./img/cisco.png",
-    explicacao: "Uma das principais fabricantes mundiais de roteadores, switches e firewalls corporativos, amplamente estudada em laboratórios e simulações de redes."
-  },
-  {
-    palavra: "SPOOF",
-    titulo: "Ataque de Spoofing (Falsificação)",
-    categoria: "Cibersegurança",
-    imagem: "./img/spoof.png",
-    explicacao: "Técnica em que um invasor falsifica a identidade de origem (como endereço IP, MAC ou servidor DNS) para enganar sistemas e interceptar comunicações."
-  },
-  {
-    palavra: "SNIFF",
-    titulo: "Sniffing (Análise de Pacotes)",
-    categoria: "Cibersegurança",
-    imagem: "./img/sniff.png",
-    explicacao: "Captura e inspeção dos pacotes que trafegam pela rede, usada por administradores para diagnosticar falhas (como no Wireshark) ou por atacantes em redes abertas."
+    explicacao: "Uma das maiores fabricantes mundiais de roteadores, switches e soluções de segurança corporativa, referência no ensino e na certificação de profissionais de redes."
   },
   {
     palavra: "PONTE",
     titulo: "Bridge (Ponte de Rede)",
     categoria: "Hardware de Rede",
     imagem: "./img/ponte.png",
-    explicacao: "Dispositivo ou recurso da Camada 2 (Enlace) que interliga dois segmentos de rede, filtrando o tráfego com base nos endereços físicos MAC."
+    explicacao: "Dispositivo ou modo de configuração que une duas partes de uma rede para funcionarem como uma só, encaminhando os dados apenas para o lado certo."
   },
   {
     palavra: "TUNEL",
-    titulo: "Tunelamento VPN (Tunneling)",
+    titulo: "Tunelamento VPN",
     categoria: "Cibersegurança",
     imagem: "./img/tunel.png",
-    explicacao: "Técnica usada por VPNs para encapsular e criptografar pacotes de dados dentro de outro protocolo, criando um corredor seguro através da internet pública."
+    explicacao: "Tecnologia usada pelas VPNs para criar um caminho fechado e criptografado dentro da internet pública, protegendo sua conexão mesmo em redes Wi-Fi abertas."
   },
   {
-    palavra: "TRUNK",
-    titulo: "Porta Trunk (IEEE 802.1Q)",
-    categoria: "Segurança & Arquitetura",
-    imagem: "./img/trunk.png",
-    explicacao: "Link configurado entre switches ou roteadores capaz de transportar o tráfego de múltiplas VLANs simultaneamente usando etiquetas (tags) nos quadros."
+    palavra: "RISCO",
+    titulo: "Segurança da Informação & LGPD",
+    categoria: "Cibersegurança",
+    imagem: "./img/risco.png",
+    explicacao: "Conjunto de boas práticas e leis (como a LGPD) voltadas a prevenir vazamentos, golpes digitais e falhas que possam expor dados pessoais na rede."
   },
   {
-    palavra: "BORDA",
-    titulo: "Roteador de Borda & Edge",
-    categoria: "Segurança & Arquitetura",
-    imagem: "./img/borda.png",
-    explicacao: "Equipamento situado na fronteira entre a rede interna (LAN) e a rede externa (ISP/Internet), onde geralmente atuam o NAT e as primeiras barreiras de firewall."
-  },
-  {
-    palavra: "PILHA",
-    titulo: "Pilha de Protocolos (TCP/IP)",
-    categoria: "Protocolos de Rede",
-    imagem: "./img/pilha.png",
-    explicacao: "Conjunto organizado de camadas de protocolos (Aplicação, Transporte, Internet e Acesso à Rede) que trabalham juntas para permitir a comunicação entre dispositivos."
+    palavra: "MICRO",
+    titulo: "Microcomputador & Estação",
+    categoria: "Hardware de Rede",
+    imagem: "./img/micro.png",
+    explicacao: "Computador pessoal ou estação de trabalho conectada à rede para acessar sistemas, navegar na internet e utilizar recursos compartilhados."
   },
   {
     palavra: "FLUXO",
-    titulo: "Controle de Fluxo (TCP)",
+    titulo: "Controle de Fluxo de Dados",
     categoria: "Protocolos de Rede",
     imagem: "./img/fluxo.png",
-    explicacao: "Mecanismo que regula a velocidade de envio de dados entre transmissor e receptor para evitar que um dispositivo mais rápido sobrecarregue a memória de outro mais lento."
+    explicacao: "Mecanismo inteligente que ajusta a velocidade de envio dos dados entre dois aparelhos para evitar que um dispositivo rápido sobrecarregue outro mais lento."
   },
   {
-    palavra: "SALTO",
-    titulo: "Salto de Rede (Hop & TTL)",
-    categoria: "Protocolos de Rede",
-    imagem: "./img/salto.png",
-    explicacao: "Cada passagem de um pacote de dados por um roteador no caminho até o destino. O campo TTL (Time to Live) limita o número máximo de saltos para evitar loops."
+    palavra: "BUSCA",
+    titulo: "Buscadores & Resolução DNS",
+    categoria: "Serviços & Infraestrutura",
+    imagem: "./img/busca.png",
+    explicacao: "Sistemas que localizam informações e traduzem nomes de sites fáceis de lembrar (como senac.br) nos endereços numéricos IP dos servidores onde estão hospedados."
   },
   {
-    palavra: "PERDA",
-    titulo: "Perda de Pacotes (Packet Loss)",
-    categoria: "Conceito Fundamental",
-    imagem: "./img/perda.png",
-    explicacao: "Ocorre quando um ou mais pacotes enviados pela rede não chegam ao destino devido a congestionamento, falhas em cabos ou interferência no Wi-Fi."
+    palavra: "COPIA",
+    titulo: "Backup e Cópia de Segurança",
+    categoria: "Cibersegurança",
+    imagem: "./img/copia.png",
+    explicacao: "Cópia preventiva de arquivos importantes guardada em outro disco ou na nuvem para garantir a recuperação dos dados em caso de falha de hardware ou ataque de vírus."
   },
   {
     palavra: "DELAY",
-    titulo: "Latência e Delay de Rede",
+    titulo: "Latência e Delay (Ping)",
     categoria: "Conceito Fundamental",
     imagem: "./img/delay.png",
-    explicacao: "Tempo que um pacote de dados leva para sair da origem e chegar ao destino. Quanto menor o delay (medido em milissegundos), mais responsiva é a conexão."
+    explicacao: "Tempo que uma informação leva para ir do seu dispositivo até o servidor e voltar, medido em milissegundos (ms). Quanto menor o delay, menor o atraso em jogos e chamadas de vídeo."
   },
   {
-    palavra: "PINGS",
-    titulo: "Comando Ping (Protocolo ICMP)",
+    palavra: "EMAIL",
+    titulo: "Correio Eletrônico (E-mail)",
     categoria: "Protocolos de Rede",
-    imagem: "./img/pings.png",
-    explicacao: "Ferramenta de diagnóstico que envia pacotes ICMP Echo Request para testar se um host está acessível na rede e medir o tempo de resposta (latência)."
+    imagem: "./img/email.png",
+    explicacao: "Serviço de troca de mensagens digitais pela internet que funciona graças a protocolos específicos de envio (SMTP) e recebimento (IMAP e POP3)."
   },
   {
-    palavra: "TRACE",
-    titulo: "Traceroute / Tracert",
+    palavra: "AUDIO",
+    titulo: "Chamadas de Voz & VoIP",
+    categoria: "Serviços & Infraestrutura",
+    imagem: "./img/audio.png",
+    explicacao: "Transmissão de voz e som em tempo real pela internet (como chamadas no WhatsApp e reuniões online), transformando a fala em pacotes digitais comprimidos."
+  },
+  {
+    palavra: "VIDEO",
+    titulo: "Streaming de Vídeo na Rede",
+    categoria: "Serviços & Infraestrutura",
+    imagem: "./img/video.png",
+    explicacao: "Transmissão contínua de imagens e som pela internet sem precisar baixar o arquivo inteiro antes, ajustando a qualidade automaticamente conforme a velocidade da rede."
+  },
+  {
+    palavra: "TEXTO",
+    titulo: "Codificação de Texto (UTF-8)",
     categoria: "Protocolos de Rede",
-    imagem: "./img/trace.png",
-    explicacao: "Utilitário de diagnóstico que mapeia todo o trajeto de um pacote pela internet, mostrando cada roteador (salto) atravessado e o tempo gasto em cada etapa."
-  },
-  {
-    palavra: "LEASE",
-    titulo: "Concessão DHCP (DHCP Lease)",
-    categoria: "Protocolos de Rede",
-    imagem: "./img/lease.png",
-    explicacao: "Tempo determinado durante o qual um servidor DHCP empresta um endereço IP dinâmico para um dispositivo conectado à rede antes de precisar renová-lo."
-  },
-  {
-    palavra: "FUSAO",
-    titulo: "Fusão de Fibra Óptica",
-    categoria: "Infraestrutura Física",
-    imagem: "./img/fusao.png",
-    explicacao: "Processo de emenda de alta precisão que utiliza um arco elétrico (máquina de fusão) para unir dois filamentos de fibra óptica com perda mínima de sinal luminoso."
-  },
-  {
-    palavra: "CRIMP",
-    titulo: "Crimpagem de Cabos RJ-45",
-    categoria: "Infraestrutura Física",
-    imagem: "./img/crimp.png",
-    explicacao: "Fixação mecânica do conector RJ-45 na ponta do cabo de par trançado utilizando um alicate crimpador para pressionar os contatos metálicos nos fios."
-  },
-  {
-    palavra: "SERIE",
-    titulo: "Porta Serial & Console (RS-232)",
-    categoria: "Hardware de Rede",
-    imagem: "./img/serie.png",
-    explicacao: "Interface de comunicação bit a bit muito utilizada por técnicos de redes para acessar o console e configurar switches e roteadores gerenciáveis localmente."
-  },
-  {
-    palavra: "CORES",
-    titulo: "Código de Cores (T568A / T568B)",
-    categoria: "Infraestrutura Física",
-    imagem: "./img/cores.png",
-    explicacao: "Sequência padronizada dos 8 fios coloridos dentro do cabo de rede (verde, laranja, azul e marrom) que garante a compatibilidade na montagem de cabos Ethernet."
+    imagem: "./img/texto.png",
+    explicacao: "Padrão internacional que converte letras, acentos e emojis em bytes para que qualquer computador ou celular exiba mensagens e páginas web corretamente."
   },
   {
     palavra: "RADIO",
     titulo: "Enlace de Rádio Frequência",
     categoria: "Redes Sem Fio",
     imagem: "./img/radio.png",
-    explicacao: "Transmissão de dados sem fio ponto a ponto ou ponto-multiponto usando antenas direcionais para interligar prédios ou levar internet a áreas remotas."
-  },
-  {
-    palavra: "GUEST",
-    titulo: "Rede Wi-Fi Guest (Visitantes)",
-    categoria: "Segurança & Arquitetura",
-    imagem: "./img/guest.png",
-    explicacao: "Rede sem fio isolada criada no roteador ou controlador Wi-Fi para dar acesso à internet a visitantes sem permitir que enxerguem os computadores internos."
-  },
-  {
-    palavra: "REGRA",
-    titulo: "Regras de Firewall (ACL)",
-    categoria: "Cibersegurança",
-    imagem: "./img/regra.png",
-    explicacao: "Critérios configurados no firewall ou roteador que decidem quais pacotes devem ser permitidos ou bloqueados com base em IP, porta e protocolo."
-  },
-  {
-    palavra: "FLOOD",
-    titulo: "Ataque de Flood (DDoS)",
-    categoria: "Cibersegurança",
-    imagem: "./img/flood.png",
-    explicacao: "Ataque de negação de serviço em que um servidor ou rede é inundado por milhões de requisições simultâneas até esgotar sua banda ou processamento."
+    explicacao: "Comunicação sem fio de longa distância feita por antenas direcionais para interligar prédios ou levar internet a áreas rurais onde não chega cabo."
   },
   {
     palavra: "VIRUS",
     titulo: "Vírus e Malwares",
     categoria: "Cibersegurança",
     imagem: "./img/virus.png",
-    explicacao: "Código malicioso capaz de infectar arquivos, alterar configurações do sistema e comprometer a segurança de estações conectadas à rede."
-  },
-  {
-    palavra: "WORMS",
-    titulo: "Worms (Vermes de Rede)",
-    categoria: "Cibersegurança",
-    imagem: "./img/worms.png",
-    explicacao: "Tipo de malware autônomo que explora falhas em serviços de rede para se replicar e se espalhar automaticamente para outros computadores sem ação humana."
-  },
-  {
-    palavra: "SHELL",
-    titulo: "Secure Shell (SSH) & Terminal",
-    categoria: "Sistemas & Servidores",
-    imagem: "./img/shell.png",
-    explicacao: "Interface de linha de comando e protocolo criptografado (porta 22) usado por administradores para gerenciar servidores Linux e equipamentos de rede remotamente."
+    explicacao: "Programas maliciosos criados para invadir sistemas, roubar senhas, sequestrar arquivos ou se espalhar por outros computadores conectados na mesma rede."
   },
   {
     palavra: "BYTES",
     titulo: "Bytes e Unidades de Dados",
     categoria: "Conceito Fundamental",
     imagem: "./img/bytes.png",
-    explicacao: "Conjunto de 8 bits usado como unidade padrão para medir o tamanho de arquivos e pacotes na memória e no armazenamento de servidores."
+    explicacao: "Conjunto de 8 bits usado como medida básica para indicar o tamanho de arquivos, fotos e programas armazenados na memória ou transmitidos na rede."
+  },
+  {
+    palavra: "CYBER",
+    titulo: "Cibersegurança & Espaço Digital",
+    categoria: "Cibersegurança",
+    imagem: "./img/cyber.png",
+    explicacao: "Área da tecnologia dedicada a proteger redes, computadores e dados pessoais contra invasões, golpes online e ataques digitais."
+  },
+  {
+    palavra: "DEBUG",
+    titulo: "Depuração e Diagnóstico (Debug)",
+    categoria: "Sistemas & Servidores",
+    imagem: "./img/debug.png",
+    explicacao: "Processo de investigar, testar e corrigir erros em códigos de programação ou falhas de comunicação em uma rede de computadores."
+  },
+  {
+    palavra: "PATCH",
+    titulo: "Patch Panel & Atualizações",
+    categoria: "Infraestrutura Física",
+    imagem: "./img/patch.png",
+    explicacao: "Em redes físicas, é o painel que organiza e conecta os cabos dentro do rack. Em sistemas, é uma atualização lançada para corrigir falhas e brechas de segurança."
+  },
+  {
+    palavra: "SHELL",
+    titulo: "Terminal e Linha de Comando (Shell)",
+    categoria: "Sistemas & Servidores",
+    imagem: "./img/shell.png",
+    explicacao: "Tela de comandos de texto usada por técnicos e administradores para configurar servidores, testar conexões e controlar sistemas com agilidade."
+  },
+  {
+    palavra: "GUEST",
+    titulo: "Rede Wi-Fi Guest (Visitantes)",
+    categoria: "Segurança & Arquitetura",
+    imagem: "./img/guest.png",
+    explicacao: "Rede Wi-Fi separada criada para visitantes terem acesso à internet sem conseguir enxergar ou acessar os computadores e arquivos internos da casa ou empresa."
+  },
+  {
+    palavra: "ADMIN",
+    titulo: "Administrador de Rede (Admin)",
+    categoria: "Sistemas & Servidores",
+    imagem: "./img/admin.png",
+    explicacao: "Conta com permissão total para configurar roteadores, criar usuários, definir senhas e manter toda a rede funcionando com segurança."
+  },
+  {
+    palavra: "INPUT",
+    titulo: "Entrada de Dados (Input)",
+    categoria: "Conceito Fundamental",
+    imagem: "./img/input.png",
+    explicacao: "Qualquer informação ou comando que você envia para o computador ou sistema — como digitar uma senha, clicar em um botão ou enviar uma mensagem na rede."
+  },
+  {
+    palavra: "SETUP",
+    titulo: "Setup e Configuração de Sistema",
+    categoria: "Hardware de Rede",
+    imagem: "./img/setup.png",
+    explicacao: "Conjunto de equipamentos da estação de trabalho (computador, monitores e rede) ou o painel inicial onde configuramos o funcionamento de um aparelho."
+  },
+  {
+    palavra: "PIXEL",
+    titulo: "Pixel & Resolução de Tela",
+    categoria: "Conceito Fundamental",
+    imagem: "./img/pixel.png",
+    explicacao: "Menor ponto luminoso que forma uma imagem digital na tela. Quanto mais pixels uma transmissão de vídeo tem (como Full HD ou 4K), mais nítida ela aparece."
+  },
+  {
+    palavra: "PASTA",
+    titulo: "Pastas Compartilhadas na Rede",
+    categoria: "Serviços & Infraestrutura",
+    imagem: "./img/pasta.png",
+    explicacao: "Diretório configurado em um computador ou servidor para que várias pessoas da mesma rede local possam abrir, salvar e trocar documentos facilmente."
+  },
+  {
+    palavra: "TRAVA",
+    titulo: "Bloqueio e Trava de Segurança",
+    categoria: "Cibersegurança",
+    imagem: "./img/trava.png",
+    explicacao: "Proteção física (como fechaduras em racks de servidores) ou digital (bloqueio automático de tela e conta após tentativas erradas de senha) para evitar acessos não autorizados."
   }
 ];
 
@@ -450,12 +450,25 @@ document.addEventListener("click", (e) => {
 });
 
 // confere nas listas locais e depois nas APIs de PT/EN com timeout curto
-async function validarPalavraReal(palpite) {
+function estaNoDicionarioLocal(palpite) {
   if (PALAVRAS_REDES.some((item) => item.palavra === palpite)) {
     return true;
   }
 
-  if (typeof DICIONARIO_PT !== "undefined" && DICIONARIO_PT.has(palpite)) {
+  if (typeof DICIONARIO_PT !== "undefined") {
+    if (DICIONARIO_PT instanceof Set) {
+      return DICIONARIO_PT.has(palpite);
+    }
+    if (Array.isArray(DICIONARIO_PT)) {
+      return DICIONARIO_PT.includes(palpite);
+    }
+  }
+
+  return false;
+}
+
+async function validarPalavraReal(palpite) {
+  if (estaNoDicionarioLocal(palpite)) {
     return true;
   }
 
@@ -467,8 +480,12 @@ async function validarPalavraReal(palpite) {
     return false;
   }
 
+  if (typeof navigator !== "undefined" && navigator.onLine === false) {
+    return false;
+  }
+
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 3000);
+  const timeoutId = setTimeout(() => controller.abort(), 2000);
 
   const checarPortugues = fetch(
     `https://api.dicionario-aberto.net/word/${palpite.toLowerCase()}`,
@@ -501,15 +518,14 @@ async function validarPalavraReal(palpite) {
       return true;
     }
 
-    // so recusa com certeza se ambas as APIs responderam sem erro
     if (resPt.status === "fulfilled" && resEn.status === "fulfilled") {
       return false;
     }
 
-    return temVogal && /[BCDFGHJKLMNPQRSTVWXZ]/.test(palpite);
+    return estaNoDicionarioLocal(palpite);
   } catch {
     clearTimeout(timeoutId);
-    return temVogal && /[BCDFGHJKLMNPQRSTVWXZ]/.test(palpite);
+    return estaNoDicionarioLocal(palpite);
   }
 }
 
@@ -1000,12 +1016,13 @@ function desenharMolduraSobreCanvas(ctx, w, h) {
     ctx.fillStyle = "#FFFFFF";
     ctx.font = "bold 22px sans-serif";
     ctx.textAlign = "left";
-    ctx.fillText("WORDLE SENATEC • SENAC REGISTRO", 42, h - 52);
+    ctx.fillText("WORDLE EMPREENDA • SENAC REGISTRO", 42, h - 52);
 
     ctx.fillStyle = "#FDC180";
     ctx.font = "bold 18px monospace";
     ctx.textAlign = "right";
-    ctx.fillText("19/11/2026", w - 42, h - 52);
+    const dataHoje = new Date().toLocaleDateString("pt-BR");
+    ctx.fillText(dataHoje, w - 42, h - 52);
   }
 
   if (!itemAtual) return;
@@ -1089,7 +1106,7 @@ function criarModalFotoSeNecessario() {
   modal.innerHTML = `
     <div class="pb-dialog">
       <div class="pb-header">
-        <h3>📸 Recordação Senatec</h3>
+        <h3>📸 Recordação EMPREENDA</h3>
         <button id="btn-fechar-foto" type="button" class="pb-close-btn">✕ Fechar</button>
       </div>
 
@@ -1152,7 +1169,7 @@ function criarModalFotoSeNecessario() {
     if (!fotoCapturadaDataUrl) return;
     const link = document.createElement("a");
     link.href = fotoCapturadaDataUrl;
-    link.download = `wordle-senatec-${itemAtual ? itemAtual.palavra.toLowerCase() : "foto"}.png`;
+    link.download = `wordle-EMPREENDA-${itemAtual ? itemAtual.palavra.toLowerCase() : "foto"}.png`;
     link.click();
   });
 }
@@ -1281,7 +1298,7 @@ async function gerarQRCodeParaFoto(blob) {
     if (!storage) throw new Error("SDK do Appwrite indisponível");
 
     const { ID } = window.Appwrite;
-    const nomeArquivo = `senatec-${itemAtual ? itemAtual.palavra.toLowerCase() : "foto"}-${Date.now()}.png`;
+    const nomeArquivo = `EMPREENDA-${itemAtual ? itemAtual.palavra.toLowerCase() : "foto"}-${Date.now()}.png`;
     const arquivoFoto = new File([blob], nomeArquivo, { type: "image/png" });
 
     // 1. Envia a foto para o bucket 'cabine-fotos' no Appwrite
@@ -1411,6 +1428,7 @@ function soltarConfetesSenac(venceu) {
 }
 
 function mostrarToast(mensagem) {
+  if (!toastContainerEl) return;
   const toast = document.createElement("div");
   toast.className = "toast";
   toast.textContent = mensagem;

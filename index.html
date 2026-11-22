@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Wordle Senatec</title>
+    <title>Wordle EMPREENDA</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,7 +13,7 @@
     <header class="senac-header">
         <div class="header-inner">
             <div class="brand">
-                <div class="brand-badge">SENATEC</div>
+                <div class="brand-badge">EMPREENDA</div>
                 <div>
                     <h1>Redes &amp; <span>Tecnologia</span></h1>
                     <p class="subtitle">Portal Interativo • Vinicius Ragnev • Técnico em Informática SENAC</p>
@@ -32,6 +32,13 @@
                 <button class="nav-btn" data-target="view-glossario" type="button" onclick="mudarAba('view-glossario')">
                     📖 Glossário
                 </button>
+                <fieldset class="radio-switch" id="mode-switcher">
+                    <legend>Esquema de Cores</legend>
+                    <input type="radio" name="color-scheme" id="light" checked>
+                    <label for="light" title="Modo claro">☀️</label>
+                    <input type="radio" name="color-scheme" id="dark">
+                    <label for="dark" title="Modo escuro">🌑</label>
+                </fieldset>
             </nav>
         </div>
     </header>
@@ -47,11 +54,11 @@
                     <h2>Entenda como o mundo se conecta e teste seus conhecimentos</h2>
                     <p>
                         De cabos de fibra óptica e roteadores até sensores inteligentes de IoT.<br>
-                        Navegue pelos conceitos de redes, assista aos vídeos e desafie-se no nosso Wordle.
+                        Navegue pelos conceitos de redese desafie-se no nosso Wordle.
                     </p>
                     <div class="hero-actions">
                         <button class="btn-senac-orange" type="button" onclick="mudarAba('view-jogo')">
-                            🎮 Ir para o Desafio Wordle
+                            🎮 Desafio Wordle
                         </button>
                         <button class="btn-senac-outline-white" type="button" onclick="mudarAba('view-glossario')">
                             📖 Abrir Glossário
@@ -88,8 +95,7 @@
                     <h4>Como a Internet Funciona</h4>
                     <p>
                         Ao acessar um site, seu navegador precisa localizar onde ele está hospedado, solicitar os
-                        arquivos e recebê-los com segurança — tudo isso acontece em frações de segundo pela rede
-                        mundial (internet).
+                        arquivos e recebê-los com segurança, tudo isso acontece em frações de segundo pela internet.
                     </p>
                     <ul class="topic-list">
                         <li><strong>DNS:</strong> Traduz o nome do site (domínio) no endereço <strong>IP</strong> real
@@ -123,14 +129,15 @@
                     <div class="topic-tag">04 • Camada Física</div>
                     <h4>Como a internet é transmitida por cabos?</h4>
                     <p>
-                        Na prática, a internet viaja como ondas elétricas em movimento geradas pelas centrais dos
-                        <strong>provedores</strong>. Ao chegar no roteador em <strong>bits (0 e 1)</strong>, essa
-                        informação passa pelo processo de <strong>modulação</strong>, transformando-se nas ondas
+                        Na prática, a internet viaja como <strong>pulsos de luz</strong> (na fibra óptica) ou
+                        <strong>sinais elétricos</strong> (nos cabos metálicos) gerados pelas centrais dos
+                        <strong>provedores</strong>. Ao chegar no modem e no roteador em <strong>bits (0 e 1)</strong>,
+                        essa informação passa pelo processo de <strong>modulação</strong>, transformando-se nas ondas
                         eletromagnéticas que formam o Wi-Fi da sua rede residencial (<strong>LAN</strong>).
                     </p>
                     <ul class="topic-list">
-                        <li><strong>Saída da Central:</strong> Transmissores da operadora convertem dados puros em
-                            sinais modulados de alta frequência na origem.</li>
+                        <li><strong>Saída da Central (Fibra):</strong> Transmissores ópticos da operadora convertem os
+                            dados em pulsos de luz enviados pela fibra óptica até o modem.</li>
                         <li><strong>Pulsos Elétricos:</strong> Dentro dos circuitos e cabos de cobre (Ethernet), os bits
                             viajam como variações de corrente elétrica.</li>
                         <li><strong>Access Point (Rádio):</strong> Transforma os bits elétricos em ondas
@@ -142,7 +149,7 @@
                     <div class="topic-tag">05 • Infraestrutura &amp; Segurança</div>
                     <h4>Cabeamento Estruturado<br>&amp; Proteção de Rede</h4>
                     <p>
-                        De nada adianta ter internet rápida se a rede estiver desorganizada ou vulnerável. O
+                        De nada adianta ter internet rápida se a rede estiver desorganizada ou vulnerável. <br>O
                         <strong>cabeamento estruturado</strong> padroniza toda a parte física para evitar falhas e
                         interferências, enquanto as barreiras de <strong>segurança</strong> protegem os dados contra
                         invasões e vazamentos.
@@ -239,14 +246,14 @@
         <section id="view-jogo" class="view-section">
             <div class="game-toolbar">
                 <div class="game-instructions">
-                    Descubra o termo de <strong>Redes &amp; Tecnologia</strong>. Você pode testar qualquer
+                    Descubra o termo de <strong>Redes &amp; Tecnologia</strong>.<br>Você pode testar qualquer
                     palavra!
                 </div>
                 <div class="game-buttons">
                     <button id="btn-dica" class="btn-tool" type="button" title="Mostrar categoria da palavra">
                         💡 Dica
                     </button>
-                    <button id="btn-teclado" class="btn-tool" type="button" aria-expanded="false"
+                    <button id="btn-teclado" class="btn-tool active" type="button" aria-expanded="true"
                         title="Ativar ou ocultar teclado na tela">
                         ⌨️ Teclado
                     </button>
@@ -271,7 +278,7 @@
 
             <div id="board" class="board" aria-label="Tabuleiro do jogo"></div>
 
-            <div id="virtual-keyboard" class="keyboard hidden" aria-label="Teclado virtual"></div>
+            <div id="virtual-keyboard" class="keyboard" aria-label="Teclado virtual"></div>
 
             <article id="edu-card" class="edu-card hidden" aria-live="polite">
                 <div class="edu-badge" id="edu-status"></div>
@@ -299,7 +306,7 @@
         <section id="view-glossario" class="view-section">
             <div class="section-heading">
                 <h3>📖 Glossário de Redes &amp; Tecnologia</h3>
-                <p>Consulte todos os termos presentes no Wordle Senatec com suas definições</p>
+                <p>Consulte todos os termos presentes no Wordle EMPREENDA com suas definições</p>
             </div>
 
             <div id="glossary-grid" class="glossary-grid"></div>
@@ -308,7 +315,7 @@
 
     <footer class="senac-footer">
         <div class="footer-inner">
-            <span><strong>SENAC</strong> • Projeto Senatec — Redes &amp; Tecnologia</span>
+            <span><strong>SENAC</strong> • Projeto EMPREENDA — Redes &amp; Tecnologia</span>
             <span id="net-status" title="Clique para testar o envio">● HTTP • LAN</span>
         </div>
     </footer>
